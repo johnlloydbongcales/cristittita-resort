@@ -89,7 +89,7 @@ nav ul li a:hover, .brand a:hover {
     border: 0;
     border-radius: 10px;
     color: #fff;
-    padding: .5em 1.5em;
+    padding: .5em 1em;
     background:var(--tertiary) ;
     display: flex;
     transition: 0.2s background;
