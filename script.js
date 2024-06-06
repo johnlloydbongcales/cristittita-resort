@@ -85,5 +85,29 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     document.getElementById("myForm").reset();
   }, 2000); // Simulate a delay of 2 seconds before completing the form submission
 });
-
 }
+
+
+// scripts.js
+
+// scripts.js
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  var loginButton = document.getElementById("loginButton");
+  var modal = document.getElementById("loginForm");
+  var closeButton = document.getElementsByClassName("close-button")[0];
+
+  loginButton.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  closeButton.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+});

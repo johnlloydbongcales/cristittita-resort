@@ -2,242 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cristitita Resort</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/CRITITIA.png" type="image/x-icon" />
-
-    <!-- Include SweetAlert CSS -->
-    <link rel="stylesheet" type="style" href="sweetalert2.min.css" />
-
-    <!-- Include SweetAlert JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
-    <script src="script.js" defer></script>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
-    <nav>
-      <h1 class="brand" style="display: flex; color: white;">
-        <a href="#" style="padding-right: 20px;"><img src="img/CRITITIA.png" alt="" style="width: 50px; height: 50px;  border-radius: 50%;" ></i>CRISTITITA</a>
-      </h1>
-
-      <div class="humburger" id="menu" onclick="showMenu()">
-        <i class="fa-solid fa-bars" id="icon"></i>
-      </div>
-
-      <ul id="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- <li> <a href="https://calendly.com/johnlloydbongcales/cristitita-reservation" class="book" id="book">Book Now </i></a> 
-        </li> -->
-<!--         <li>  <a href="https://calendly.com/johnlloydbongcales/cristitita-reservation"
-          ><button id="book" class="darkmode-ignore" style=" font-size: 2vh;">
-            Book Now <i class="fa-regular fa-calendar-days calendar"></i>
-            <div class="arrow-wrapper">
-              <div class="arrow"></div>
-            </div></button
-        ></a> </li> -->
-          <li>  <a href="https://calendly.com/xihaseh583/cristitita-resort-booking"
-          ><button id="book" class="darkmode-ignore" style=" font-size: 2vh;">
-            Book Now <i class="fa-regular fa-calendar-days calendar"></i>
-            <div class="arrow-wrapper">
-              <div class="arrow"></div>
-            </div></button
-        ></a> </li>
-      </ul>
-    </nav>
-
-    <section id="home">
-      <div id="hero" class="container">
-        <div class="left-hero">
-          <h2 class="darkmode-ignore">Cristitita Resort</h2>
-          <h4 class="typer"><span id="typer"></span></h4>
-          <p>
-            Cristitita Beach in Cantilan, SDS, is a slice of tropical heaven. With soft white sands and clear blue waters, it's a perfect spot to kick back and relax. Palm trees sway in the breeze, and the gentle waves create a soothing soundtrack. As the sun sets, the sky transforms into a canvas of warm colors, making it an ideal place for a romantic evening stroll. Whether you're into snorkeling or just want to soak up the sun, Matho Beach offers a simple yet beautiful escape from the everyday hustle.
-
-            <a href="#about"
-              ><button id="cta" class="darkmode-ignore">
-                Learn More
-                <div class="arrow-wrapper">
-                  <div class="arrow"></div>
-                </div></button
-            ></a>
-          </p>
+    <div class="login-container">
+      <form class="login-form">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
         </div>
-
-        <div class="right-hero">
-          <swiper-container class="mySwiper" navigation="true">
-            <swiper-slide>
-              <img id="hero-img" src="img/5.jpg" alt=""
-            /></swiper-slide>
-            <swiper-slide>
-              <img id="hero-img" src="img/4.jpg" alt=""
-            /></swiper-slide>
-            <swiper-slide>
-              <img id="hero-img" src="img/3.jpg" alt=""
-            /></swiper-slide>
-            <swiper-slide>
-              <img id="hero-img" src="img/2.jpg" alt=""
-            /></swiper-slide>
-            <swiper-slide>
-              <img id="hero-img" src="img/1.jpg" alt=""
-            /></swiper-slide>
-          </swiper-container>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
         </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container about">
-        <div class="about-title title darkmode-ignore">
-          <h1>about us</h1>
-        </div>
-
-        <div class="mobile_pic">
-          <img src="img/brand.jpeg" alt="" />
-        </div>
-        <div class="about-flex">
-          <div class="pic">
-            <img src="img/CRITITIA.png" alt="" />
-          </div>
-
-          <div class="details">
-            <p class="first-par">
-              <strong style="color: #E9884A;">Cristitita Beach Resort</strong>
-              is located at Brgy. 123, Cantilan, SDS. Offering cozy cottages
-               right by the beach, visitors can enjoy the convenience of staying 
-               in comfortable accommodations with easy access to the sun, sea, 
-               and sand. The beachside cottages provide a tropical charm, allowing
-                guests to immerse themselves in the natural surroundings. When
-                 it comes to dining, the resort boasts a variety of culinary delights. 
-                 From local seafood delicacies to local cousine, the beachfront cafes
-                  and restaurants offer a diverse menu. Whether you're craving a refreshing 
-                  tropical drink or a hearty meal, you can savor a range of food and 
-                  beverages while taking in the breathtaking views of the ocean. With 
-                  its inviting accommodations and a tempting array of culinary options, 
-                  Cristitita Beach Resort ensures that your coastal getaway is as comfortable as it 
-                  is memorable.
-            </p>
-
-            <p>
-              For more information about us, you can also
-              <strong>visit</strong> or <strong>message</strong> us in any of
-              our social media platform below. We will be happy to entertain
-              you.
-            </p>
-
-            <div class="socmed">
-              <button class="darkmode-ignore">
-                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
-              </button>
-              <button class="darkmode-ignore">
-                <a href="#" class="darkmode-ignore"
-                  ><i class="fa-brands fa-instagram"></i>Instagram</a
-                >
-              </button>
-              <button class="darkmode-ignore">
-                <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
-              </button>
-              <button class="darkmode-ignore">
-                <a href="#"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact container">
-        <div class="contact-title title darkmode-ignore">
-          <h1>Contact us</h1>
-        </div>
-
-        <div class="description">
-          <p>
-            For orders and inqueries, feel free to send us an
-            <a href="#">email</a> or schedule an <a href="https://calendly.com/xihaseh583/cristitita-resort-booking">appointment.</a>
-          </p>
-        </div>
-
-        <form class="form" id="myForm">
-          <header>Send us Feedback</header>
-          <input type="hidden" name="_next" value="#" />
-          <input type="text" placeholder="Enter Name" class="input" required />
-          <input
-            type="text"
-            placeholder="Phone Number"
-            class="input"
-            required
-          />
-          <input type="email" placeholder="Email" class="input" required />
-          <textarea
-            placeholder="Write a message..."
-            class="input"
-            id="message"
-          ></textarea>
-
-          <button onclick="sendMsg()" id="submitButton">Submit</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="footer">
-      <div class="footer container darkmode-ignore">
-        <h1>developed by:</h1>
-        <ul id="developer">
-<!--           <li style="padding-right: 0;"><a href="https://johnlloydbongcales.netlify.app/">John Lloyd Bongcales</a> </li> -->
-           <li style="padding-right: 0;"><a href="">Larriel Sual</a> </li>
-  <li style="padding-right: 0;"><a href="">Ritchell Reatrazan</a> </li>
-
-  <li style="padding-right: 0;"><a href="">Venezia Buniel</a> </li>        </ul>
-
-        <hr style="color: #275775;" />
-        <h3 class="credit">All rights reserved &copy; 2024</h3>
-      </div>
-    </section>
-
-    <!-- Swiper JS Library -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-
-    <!-- FOnt Awesome Library -->
-    <script
-      src="https://kit.fontawesome.com/842c449d43.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Darkmode JS Library -->
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-      function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-      }
-      window.addEventListener("load", addDarkmodeWidget);
-    </script>
-
-    <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed("#typer", {
-        strings: [
-          "Relaxation",
-          "Nature",
-          "Accomodation",
-          "Scenery",
-          "Liesure",
-        ],
-        typeSpeed: 50,
-        backSpeed: 50,
-        backDelay: 700,
-        loop: true,
-        loopCount: Infinity,
-        smartBackspace: true,
-        showCursor: true,
-      });
-    </script>
+      
+      </form>
+      <a href="system.html"> <button type="submit">Login</button></a>
+      <a href="register.html" > <button type="submit" style="margin: 10px; padding-left: 1%;">Register</button></a>
+    </div>
+    
+  
+    </div>
   </body>
 </html>

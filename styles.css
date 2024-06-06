@@ -1,0 +1,72 @@
+:root {
+    --primary: #132F47;
+    --secondary: #275775;
+    --tertiary: #E9884A;
+    --complementary: #F3BA6D;
+    --text: #E5F1F2;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--complementary);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--tertiary);
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.input-group input:focus {
+    border-color: var(--complementary);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--complementary);
+}
